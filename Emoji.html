@@ -12,7 +12,8 @@
 		}
 		/* Header style*/
 		header {
-			margin-top: auto;
+			margin: 0px;
+			padding: 0px;
 		}
 		img {
 			max-width: 100%;
@@ -20,7 +21,7 @@
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			margin-top: auto;
+			margin-top: 0;
 			border: 1px solid black;
 			align-items: center;
 		}
@@ -45,7 +46,36 @@
 			font-weight: bold;
 		}
 		/* Main style*/
+		p {
+			font: 100;
+			font-weight: 100;
+			text-decoration: none;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		li a {
+			display: block;
+			width: 90px; 
+			background-color: rgb(5, 119, 119);;
+		}
+		li a active {
+			background-color: rgb(12, 24, 197);
+		}
+		li a:hover:not(.active) {
+			background-color: rgb(8, 97, 156);
+		}
 		/* Footer style*/
+
+	footer {
+		border: 1px solid black;
+   		text-align: center;
+		margin: 0px 0px;
+		padding: 0px;
+
+	}
 	</style>
 </head>
 <body>
