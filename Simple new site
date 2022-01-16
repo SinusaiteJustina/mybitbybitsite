@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>1st example</title>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		/* CSS */
+		/* Body style */
+		
+		body {
+			background-color: red;
+			padding: 0px;
+			margin: 0px;
+			
+		}
+		body h1 {
+			text-transform: capitalize;
+			padding: 0px;
+			margin: 0px;
+			border: 1px solid grey;
+		}
+		#news {
+			text-transform: capitalize;
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			border: 1px solid black;
+			background-color: white;
+		}
+		a:hover, a:active {
+			text-decoration: underline;
+			color: red;
+		}
+		a:visited, a:link {
+			text-decoration: none;
+			color: green;
+		}
+		/* Class title style */
+		.title {
+			background-color: yellow;
+			border-bottom: 1px solid grey;
+			width: 99%;
+			text-transform: capitalize;
+			padding-left: 10px;
+			margin-right: 10px;
+			
+		}
+		.title h3 {
+			text-transform: capitalize;
+			padding: 0px;
+			margin: 0px;
+		}
+		.title .name {
+			background-color: green;
+			text-transform: capitalize;
+			text-align: left;
+			padding: 0px;
+			margin: 0px;		
+		}
+		.title .date {
+			background-color: blue; 
+			text-transform: capitalize;
+			text-align: right;
+			padding: 0px;
+			margin: 0px;
+			font-style: italic;
+			margin-right: 10px;
+		}
+		/* Class content style */
+		.content {
+			background-color: pink;
+			border: 1px solid grey;
+			padding-left: 10px;
+			margin-right: 10px;
+			padding: 0px;
+			margin: 0px;
+		}
+		/* Fotter style */
+		#footer {
+			background-color: blue;
+			text-align: left;
+			border-top: 1px solid grey;
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Simple new site</h1>
+	<table id="News">
+		<tr>
+			<td>
+				<h2>News</h2>
+			</td>
+		</tr>
+	</table>
+	<table class="title">
+		<tr>
+			<td class="name"><h3>About this template</h3></td>
+			<td class="date">February 15, 2021</td>
+		</tr>
+	</table>
+	<table class="content">
+		<tr>
+			<td>
+				<p>
+					Lorem ipsum dolor sit <a href="">amet</a>, consectetur adipiscing elit. 
+				</p>
+				<p>
+						Duis faucibus arcu vel eros dapibus interdum. Maecenas
+					mauris dolor, maximus in feugiat at, ornare nec enim. Cras eu
+					sapien condimentum nulla ultrices suscipit. Proin ut tortor
+					ex. Phasellus nec porta dui. 
+				</p>
+				<p>
+						Mauris nunc erat, <a href="">pharetra</a> a nibh ac, maximus aliquam
+					felis. Ut et magna egestas, efficitur risus at, interdum
+					libero. Donec sed elit et lectus accumsan laoreet. Aenean
+					lacus augue, dignissim a eros in, laoreet laoreet tortor. Sed
+					ut luctus diam, nec iaculis quam. Integer malesuada sodales
+					ex, quis consequat ipsum feugiat nec.
+				</p>
+			</td>
+		</tr>
+	</table>
+		<table class="title">
+		<tr>
+			<td class="name"><h3>Creating news on your site</h3></td>
+			<td class="date">February 24, 3245</td>
+		</tr>
+	</table>
+	<table class="content">
+		<tr>
+			<td>
+				<p>
+					Lorem ipsum dolor sit <a href="">amet</a>, consectetur adipiscing elit. 
+				</p>
+				<p>
+						Duis faucibus arcu vel eros dapibus interdum. Maecenas
+					mauris dolor, maximus in feugiat at, ornare nec enim. Cras eu
+					sapien condimentum nulla ultrices suscipit. Proin ut tortor
+					ex. Phasellus nec porta dui. 
+				</p>
+				<p>
+						Mauris nunc erat, <a href="">pharetra</a> a nibh ac, maximus aliquam
+					felis. Ut et magna egestas, efficitur risus at, interdum
+					libero. Donec sed elit et lectus accumsan laoreet. Aenean
+					lacus augue, dignissim a eros in, laoreet laoreet tortor. Sed
+					ut luctus diam, nec iaculis quam. Integer malesuada sodales
+					ex, quis consequat ipsum feugiat nec.
+				</p>
+			</td>
+		</tr>
+	</table>
+		<table class="title">
+		<tr>
+			<td class="name"><h3>Creating a news archive</h3></td>
+			<td class="date">February 22, 1234</td>
+		</tr>
+	</table>
+	<table class="content">
+		<tr>
+			<td>
+				<p>
+					Lorem ipsum dolor sit <a href="">amet</a>, consectetur adipiscing elit. 
+				</p>
+				<p>
+						Duis faucibus arcu vel eros dapibus interdum. Maecenas
+					mauris dolor, maximus in feugiat at, ornare nec enim. Cras eu
+					sapien condimentum nulla ultrices suscipit. Proin ut tortor
+					ex. Phasellus nec porta dui. 
+				</p>
+				<p>
+						Mauris nunc erat, <a href="">pharetra</a> a nibh ac, maximus aliquam
+					felis. Ut et magna egestas, efficitur risus at, interdum
+					libero. Donec sed elit et lectus accumsan laoreet. Aenean
+					lacus augue, dignissim a eros in, laoreet laoreet tortor. Sed
+					ut luctus diam, nec iaculis quam. Integer malesuada sodales
+					ex, quis consequat ipsum feugiat nec.
+				</p>
+			</td>
+		</tr>
+	</table>
+<footer>
+	<table id="footer">
+		<tr>
+			<td>
+				<p>
+					Copyright &copy; 1990 -2003 Justina 
+				</p>
+			</td>
+		</tr>
+	</table>
+</footer>
+</body>
+</html>
