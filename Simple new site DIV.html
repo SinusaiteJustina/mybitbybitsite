@@ -39,8 +39,8 @@
 		}
 		/* Class title style */
 		.title {
-			/* background-color: yellow; */
-			/* border-bottom: 1px solid grey; */
+			/* background-color: yellow;  */
+			border-bottom: 1px solid grey; 
 			width: 99%;
 			text-transform: capitalize;
 			padding-left: 5px;
@@ -54,22 +54,27 @@
 			margin: 0px;
 		}
 		.title .name {
-			/* background-color: green; */
+			/* background-color: green;  */
 			text-transform: capitalize;
 			text-align: left;
+            width: 75%;
 			padding: 0px;
 			margin: 0px;
-			border-bottom: 1px solid grey;	
+			/* border-bottom: 1px solid grey;	 */
+            display: inline-block;
 		}
 		.title .date {
 			/* background-color: blue; */
 			text-transform: capitalize;
 			text-align: right;
+            float: right;
+            width: 20%;
 			padding: 0px;
 			margin: 0px;
 			font-style: italic;
 			margin-right: 10px;
-			border-bottom: 1px solid grey;
+			/* border-bottom: 1px solid grey; */
+            display: inline-block;
 		}
 		/* Class content style */
 		body .content {
@@ -96,22 +101,22 @@
 </head>
 <body>
 	<h1>Simple new site</h1>
-	<table id="News">
-		<tr>
-			<td>
+	<div id="News">
+		<div>
+			<div>
 				<h2>News</h2>
-			</td>
-		</tr>
-	</table>
-	<table class="title">
-		<tr>
-			<td class="name"><h3>About this template</h3></td>
-			<td class="date">February 15, 2021</td>
-		</tr>
-	</table>
-	<table class="content">
-		<tr>
-			<td>
+            </div>
+		</div>
+	</div>
+	<div class="title">
+		<div>
+			<div class="name"><h3>About this template</h3></div>
+			<div class="date">February 15, 2021</div>
+        </div>
+	</div>
+	<div class="content">
+		<div>
+			<div>
 				<p>
 					Lorem ipsum dolor sit <a href="">amet</a>, consectetur adipiscing elit. 
 				</p>
@@ -129,18 +134,18 @@
 					ut luctus diam, nec iaculis quam. Integer malesuada sodales
 					ex, quis consequat ipsum feugiat nec.
 				</p>
-			</td>
-		</tr>
-	</table>
-		<table class="title">
-		<tr>
-			<td class="name"><h3>Creating news on your site</h3></td>
-			<td class="date">February 24, 3245</td>
-		</tr>
-	</table>
-	<table class="content">
-		<tr>
-			<td>
+			</div>
+		</div>
+	</div>
+		<div class="title">
+		<div>
+			<div class="name"><h3>Creating news on your site</h3></div>
+			    <div class="date">February 24, 3245</div>
+        </div>
+        </div>
+	<div class="content">
+		<div>
+			<div>
 				<p>
 					Lorem ipsum dolor sit <a href="">amet</a>, consectetur adipiscing elit. 
 				</p>
@@ -158,18 +163,18 @@
 					ut luctus diam, nec iaculis quam. Integer malesuada sodales
 					ex, quis consequat ipsum feugiat nec.
 				</p>
-			</td>
-		</tr>
-	</table>
-		<table class="title">
-		<tr>
-			<td class="name"><h3>Creating a news archive</h3></td>
-			<td class="date">February 22, 1234</td>
-		</tr>
-	</table>
-	<table class="content">
-		<tr>
-			<td>
+			</div>
+		</div>
+	</div>
+		<div class="title">
+		<div>
+			<div class="name"><h3>Creating a news archive</h3></div>
+			<div class="date">February 22, 1234</div>
+        </div>
+	</div>
+	<div class="content">
+		<div>
+			<div>
 				<p>
 					Lorem ipsum dolor sit <a href="">amet</a>, consectetur adipiscing elit. 
 				</p>
@@ -187,19 +192,19 @@
 					ut luctus diam, nec iaculis quam. Integer malesuada sodales
 					ex, quis consequat ipsum feugiat nec.
 				</p>
-			</td>
-		</tr>
-	</table>
+			</div>
+		</div>
+	</div>
 <footer>
-	<table id="footer">
-		<tr>
-			<td>
+	<div id="footer">
+		<div>
+			<div>
 				<p>
 					Copyright &copy; 1990 -2003 Justina 
 				</p>
-			</td>
-		</tr>
-	</table>
+			</div>
+		</div>
+	</div>
 </footer>
 </body>
 </html>
