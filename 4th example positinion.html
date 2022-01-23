@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>4th example</title>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* POSITION */
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                /* background-color: green; */
+                margin: 0; 
+                padding: 0; 
+            }
+            .main {
+                background-color: blue; 
+                margin: 0; 
+                padding: 0;
+                position: relative;
+                border-bottom: 3px solid rgb(143, 142, 142);
+                
+            }
+            .left {
+                width: 50%;
+                position: absolute;
+                left: 0;
+                /* border: 1px solid black; */
+                /* background-color: blue; */
+                padding: 10px 20px 0 20px;
+
+            }
+            h1 {
+                font-size: 60px;
+                font-weight: bold;
+                margin: 5px 10px;
+            }
+            .article {
+                color: rgb(114, 114, 114);
+                margin: 5px 10px;
+                
+            }
+            .first {
+                font-size: 32px;
+                margin: 0 10px;
+                /* background-color: yellow; */
+                
+            }
+            .second {
+                font-size: 18px;
+                margin: 0 10px;
+                /* background-color: green; */
+
+            }
+            .third {
+                font-size: 18px;
+                margin: 0 10px;
+                /* background-color: red; */
+
+            }
+            .right {
+                width: 50%;
+                position: absolute;
+                right: 0;
+                /* border: 1px solid black; */
+                /* background-color: blue; */
+                padding: 0;
+                margin: 0;
+
+            }
+            .logo {
+                height: 452px;
+            } 
+            .FB {
+                position: absolute;
+                left: 23px;
+                width: 50px;
+                border: 1px solid rgb(146, 145, 145);
+
+            }
+            .TW {
+                position: absolute;
+                left: 130px;
+                width: 15%;
+                border: 1px solid rgb(146, 145, 145);
+
+            }
+            .picture {
+                display: absolute;
+                bottom: 50px;
+                width: calc (100 - 20px);
+                /* border: 1px solid rgb(146, 145, 145); */
+                margin: 0 10px;
+            } 
+            .images {
+                
+            }
+
+        </style>
+</head>
+<body>
+<main class="main">
+    <div class="left">
+        <h1>about me</h1>
+        <article class="article first">
+            <p>
+                I am a UI Designer and Front End Developer from Sydney, Australia.
+            </p>
+        </article>
+        <article class="article second">
+            <p>
+                I enjoy taking complex problems and turning them into simple and beautiful interface designs. I also love logic and structure of coding and always strive to write elegant and efficient code, whether it be HTML, CSS or jQuery.
+            </p>
+        </article>
+        <article class="article third">
+            <p>
+                When I'm not coding or pushing pixels, you;ll find me in the gym or on the court shooting some hoops. 
+            </p>
+        </article>
+        <link>
+                <p>
+                    <a href="www.facebook.com"><img class="FB" src="./Images/like.jpeg"></a>
+                    <a href="www.twitter.com"><img class="TW" src="./Images/twitter.jpeg"></a>
+                </p>
+        </link>
+    </div>
+    <div class="right">
+        <div class="top-picture"><img class="logo" src="./Images/4th_man.png" alt="logo"></div>
+    </div>  
+    <picture>
+        <div class="picture">
+            <div><img class="images" src="" alt="computer"></div>
+            <div><img class="images" src="" alt="computer"></div>
+            <div><img class="images" src="" alt="computer"></div>
+            <div><img class="images" src="" alt="computer"></div>
+            <div><img class="images" src="" alt="computer"></div>
+            <div><img class="images" src="" alt="computer"></div>
+        </div>
+    </picture>
+</main>
+</body>
+</html>
