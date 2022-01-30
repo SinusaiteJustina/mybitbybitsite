@@ -8,7 +8,7 @@
             /* CSS style */
             main {
                 margin: 0 auto;
-                width: 900;
+                /* width: 900; */
             }
             h1 {
                 /* background-color: blue; */
@@ -80,6 +80,9 @@
                 display: table-cell;
                 width: 30%;
                 float: left;
+                max-width: 300px;
+                min-width: 100px;
+                object-fit: cover;
 
             }
             .content {
@@ -90,37 +93,56 @@
                 padding-left: 5px;
                 text-align: left;
             }
+            .clear::after {
+            clear: both;
+            display: table;
+            content: "";
+            } 
             #image img {
-                height: 150px; 
-                width: 250px;
+                max-width: 300px;
+                min-width: 100px;
+                width: 100%;
                 margin-top: 22px;
 
             }
             #coupon {
                 border: 3px dotted black; 
-                width: 250px;
+                width: 100%;
                 text-align: center;
                 color: red;
-                height: 150px;
+                /* height: 150px; */
                 margin-top: 10px;
+                max-width: 300px;
+                min-width: 150px;
+                padding-top: 150px;
 
             }
-            .name {
+            /* .name {
                 width: 33%;
                 float: right;
                 margin-left: 5px; 
                 padding-left: 5px;
                 text-align: left;
                 font-weight: bold;
-                margin-top: 0;
+                margin-top: 0px;
                 margin-block-end: 0;
                 margin-block-start: 0;
-            }
+            } */
+            .clear::after {
+            clear: both;
+            display: table;
+            content: "";
+            } 
+
             .footer {
                 color:rgb(145, 141, 141);
                 font-size: 12px;
-                margin-top: 30px;
-
+                /* margin-top: 30px; */
+                width: 100%;
+                margin-block-end: 0;
+                margin-block-start: 0;
+                /* display: inline; */
+                float: left;
             }
 
         </style>
@@ -186,24 +208,25 @@
                 lacus augue, dignissim a eros in, laoreet laoreet tortor. Sed
                 ut luctus diam, nec iaculis quam. Integer malesuada sodales
                 ex, quis consequat ipsum feugiat nec.
+                <p>By: Your name</p> 
             </p>
         </div>
     <!-- </div> -->
-    </div>
+    <!-- </div>
     <div class="name">
-        <div>
-            <div><p>By: Your name</p>       
-            </div>
+        <div> -->
+            <!-- <div>       -->
+            <!-- </div>
         </div>
-    </div>
-<footer>
-    <div class="footer">
-        <div>
-            <div>
+    </div> -->
+<footer class="footer">
+    <!-- <div class="footer"> -->
+        <!-- <div>
+            <div> -->
                 <p>K-5 Computer Lab oakdome.com</p>
-            </div>
-        </div>
-    </div>
+            <!-- </div>
+        </div> -->
+    <!-- </div> -->
 </main>
 </footer>
 </body>
