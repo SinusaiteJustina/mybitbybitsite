@@ -5,11 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        header {
-            width: 75%;
-            margin: 10px 5px 0px 5px;
+        * {
+            box-sizing: border-box;
+            }
+        body {
+            margin: 0;
             padding: 0;
-            
+        }
+        header {
+            margin: 0 5px;
+        }
+        section {
+            width: calc(75% - 10px);
+            margin: 10px 5px 0px 5px;
+            padding: 0; 
+            float: left;          
+        }
+        article {
+            width: calc(100% - 10px);
+            margin: 0 5px;
+        }
+        .left {
+            width: 22%;
+            float: left;
+        }
+        .images {
+            width: 9em;
+            height: 9em;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .content {
+            float: left;
+            width: 75%;
+            margin: 0; 
+            padding: 0;
+        }
+        h4 {
+            background-color: rgb(41, 128, 199);
+            margin-block-start: 0;
+            scroll-margin-block-end: 0;
+            color: white;
+            padding: 5px;
+        }
+        .h4article {
+            color: rgb(4, 210, 218);
+            text-transform: uppercase;
+        }
+        a:link, a:visited {
+            color: rgb(4, 210, 218);
+            text-decoration: underline;
+        }
+        a:hover, a:active {
+            color: blue;
+            text-decoration: none;
         }
         h2 {
             color: blue;
@@ -19,61 +70,118 @@
             margin-top: 0;
             padding-top: 0;
         }
-        article {
-            width: 75%;
+        .nav {
+            float: left; 
+            width: 20%;
+            margin: 10px 5px 0px 5px;
         }
-        img {
-            float: left;
+        .navtop {
+            border: 1px solid rgb(41, 128, 199);
+            padding: 0;
+            margin: 0;
+            background-color: rgb(41, 128, 199);
+            font-weight: bold;
+            min-width: fit-content;
+            color: white;
         }
-        .content {
-            float: right;
-        } 
+        .navtop p {
+            padding: 0;
+            margin: 0;
+        }
+        .plus {
+            width: 11px;
+            height: 11px;
+            margin: 0 10px 0 10px;
+            
+        }
+        .navlink {
+            background-color: rgb(212, 209, 209);
+            border: 1px solid rgb(194, 194, 194);
+            margin: 0;
+            padding: 0;
+            min-width: fit-content;
+            padding: 0 5px 0 0;
+        }
+        .navlinkp {
+            text-align: left;
+            margin: 5px;
+            padding: 0;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .bubble {
+            min-width: fit-content;
+            background-color: rgb(212, 209, 209);;
+            padding: 5px;
+            text-align: center;
+            position:relative;
+        }
+        .triangle:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid rgb(212, 209, 209);
+            border-right: 10px solid transparent;
+            border-top: 10px solid rgb(212, 209, 209);
+            border-bottom: 10px solid transparent;
+            right: -20px;
+            top: 6px;
+        }
+
     </style>
-<body>
-    <header>
-        <h2>Meet the HBCWeb Team</h2>
-        <p class="pheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur tortor lacinia, tincidunt nisl eu, sollicitudin magna. Vestibulum ac mi at mi malesuada hendrerit nec vitae nisl. Vivamus suscipit convallis magna quis placerat. Sed sodales mi et lacus commodo, sed dignissim massa lacinia</p>
-    </header>
-    <nav>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <p></p>
-    </nav>
+<body>  
     <main>
+        <section>
+        <header>
+            <h2>Meet the HBCWeb Team</h2>
+            <p class="pheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur tortor lacinia, tincidunt nisl eu, sollicitudin magna. Vestibulum ac mi at mi malesuada hendrerit nec vitae nisl. Vivamus suscipit convallis magna quis placerat. Sed sodales mi et lacus commodo, sed dignissim massa lacinia</p>
+        </header>  
         <article>
-                <img class="images" src="" alt="picture">  
+              <div class="left"><img class="images" src="Images/portrait_4.jpeg" alt="picture"></div>
                 <div class="content">
-                    <h4>Bob Carling - <span class="h1article">developer manager</span></h4>
-                    <p>Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
+                    <h4>Bob Carling - <span class="h4article">development manager</span></h4>
+                    <p class="contentp">Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
                 </div>
         </article>
-        <article>
-            <img class="images" src="" alt="picture">  
+        <!-- <article>
+            <img class="images" src="Images/portrait_1.jpeg" alt="picture">  
             <div class="content">
                 <h4>Bob Carling - <span class="h1article">developer manager</span></h4>
                 <p>Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
             </div>
         </article>
         <article>
-            <img class="images" src="" alt="picture">  
+            <img class="images" src="Images/portrait_1.jpeg" alt="picture">  
             <div class="content">
                 <h4>Bob Carling - <span class="h1article">developer manager</span></h4>
                 <p>Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
             </div>
         </article>
         <article>
-            <img class="images" src="" alt="picture">  
+            <img class="images" src="Images/portrait_1.jpeg" alt="picture">  
             <div class="content">
                 <h4>Bob Carling - <span class="h1article">developer manager</span></h4>
                 <p>Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
             </div>
-        </article>
+        </article> -->
+        </section>
+        <nav>
+            <div class="nav clearfix">
+                <div class="navtop"><p>&#x1F50D More About HBCWeb...</p></div>
+                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">Company Overview</a></p></div>
+                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">Meet the team</a></p></div>
+                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">The Digs</a></p></div>
+                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">The Princeline PN</a></p></div>
+                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">Client Testimonials</a></p></div>
+                <div class="navtop bot"><p>&#128488;&#65039 What our clients are saying</p></div>
+                <div class="bubble triangle"><p>Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p></div>
+                <div><p><a href="">View All Client Testimonials</a></p></div>
+            </div>
+        </nav>
     </main>
 </body>
 </head>
