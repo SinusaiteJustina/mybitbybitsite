@@ -16,23 +16,23 @@
             margin: 0 5px;
         }
         section {
-            width: calc(75% - 10px);
+            width: calc(75% - 20px);
             margin: 10px 5px 0px 5px;
             padding: 0; 
             float: left;          
         }
         article {
-            width: calc(100% - 10px);
+            width: 85%!important;
             margin: 0 5px;
         }
         .left {
-            width: 22%;
+            width: 20%;
             float: left;
         }
         .images {
             width: 9em;
             height: 9em;
-            object-fit: cover;
+            object-fit: cover; 
             border: 1px solid #ddd;
             border-radius: 4px;
             padding: 5px;
@@ -73,8 +73,35 @@
         .nav {
             float: left; 
             width: 20%;
-            margin: 10px 5px 0px 5px;
+            margin: 10px 0 5px 0px;
+            padding: 0;
         }
+        /* aside {
+
+font-size: 1.25rem;
+
+padding-left: 2rem;
+
+margin-left: 3%;
+
+width: 30.33%;
+
+float: left;
+
+border-left-width: 3px;
+
+border-left-style: solid;
+
+border-image:
+
+linear-gradient(
+
+white, grey, white
+
+) 1 100%;          
+
+} */
+
         .navtop {
             border: 1px solid rgb(41, 128, 199);
             padding: 0;
@@ -88,38 +115,70 @@
             padding: 0;
             margin: 0;
         }
-        .plus {
-            width: 11px;
-            height: 11px;
-            margin: 0 10px 0 10px;
-            
+        .plusdiv {
+            width: 15px;
+            height: 15px;
+            display: inline-block; 
+            background-image: url("Images/plus.png");
+            background-position: center;
+            background-size: contain;   
+            margin: 5px;     
         }
+        .plusdiv:hover {
+            background-image: url("Images/minus.png");
+        } 
         .navlink {
             background-color: rgb(212, 209, 209);
             border: 1px solid rgb(194, 194, 194);
             margin: 0;
-            padding: 0;
+            padding: 0px;
             min-width: fit-content;
             padding: 0 5px 0 0;
         }
-        .navlinkp {
-            text-align: left;
+        .navlink:hover {
+            background-color: blanchedalmond;
+        }
+        .navlink:hover > .plusdiv { 
+            background-image: url("Images/minus.png");
+        }
+        .navlinka {
             margin: 5px;
-            padding: 0;
+            vertical-align: middle;
+        }
+        .bot {
+            margin: 7px 0 7px 0; 
+
         }
         .clearfix::after {
             content: "";
             clear: both;
             display: table;
         }
+        .quotestop {
+            font-weight: bold;
+            color: rgb(41, 41, 41);
+            position: absolute;
+            left: 20px;
+            top: 5px;
+            font-size: 2.5em;
+        }
+        .quotesbottom {
+            font-weight: bold;
+            color: rgb(41, 41, 41);
+            position: absolute;
+            right: 20px;
+            bottom: -6px;
+            font-size: 2.5em;
+        }
         .bubble {
             min-width: fit-content;
             background-color: rgb(212, 209, 209);;
             padding: 5px;
             text-align: center;
-            position:relative;
+            position: relative;
+            border-radius: 1em;
         }
-        .triangle:before {
+        .triangle::before {
             content: "";
             width: 0px;
             height: 0px;
@@ -128,8 +187,8 @@
             border-right: 10px solid transparent;
             border-top: 10px solid rgb(212, 209, 209);
             border-bottom: 10px solid transparent;
-            right: -20px;
-            top: 6px;
+            right: 16px;
+            bottom: -19px;
         }
 
     </style>
@@ -139,46 +198,53 @@
         <header>
             <h2>Meet the HBCWeb Team</h2>
             <p class="pheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur tortor lacinia, tincidunt nisl eu, sollicitudin magna. Vestibulum ac mi at mi malesuada hendrerit nec vitae nisl. Vivamus suscipit convallis magna quis placerat. Sed sodales mi et lacus commodo, sed dignissim massa lacinia</p>
-        </header>  
+        </header> 
         <article>
-              <div class="left"><img class="images" src="Images/portrait_4.jpeg" alt="picture"></div>
+              <img class="images left" src="Images/portrait_4.jpeg" alt="picture">
                 <div class="content">
                     <h4>Bob Carling - <span class="h4article">development manager</span></h4>
                     <p class="contentp">Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
                 </div>
         </article>
-        <!-- <article>
-            <img class="images" src="Images/portrait_1.jpeg" alt="picture">  
-            <div class="content">
-                <h4>Bob Carling - <span class="h1article">developer manager</span></h4>
-                <p>Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
-            </div>
-        </article>
         <article>
-            <img class="images" src="Images/portrait_1.jpeg" alt="picture">  
-            <div class="content">
-                <h4>Bob Carling - <span class="h1article">developer manager</span></h4>
-                <p>Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
-            </div>
-        </article>
-        <article>
-            <img class="images" src="Images/portrait_1.jpeg" alt="picture">  
-            <div class="content">
-                <h4>Bob Carling - <span class="h1article">developer manager</span></h4>
-                <p>Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
-            </div>
-        </article> -->
+            <img class="images left" src="Images/portrait_4.jpeg" alt="picture">
+              <div class="content">
+                  <h4>Bob Carling - <span class="h4article">development manager</span></h4>
+                  <p class="contentp">Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
+              </div>
+      </article>
+      <article>
+        <img class="images left" src="Images/portrait_4.jpeg" alt="picture">
+          <div class="content">
+              <h4>Bob Carling - <span class="h4article">development manager</span></h4>
+              <p class="contentp">Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
+          </div>
+    </article>
+    <article>
+        <img class="images left" src="Images/portrait_4.jpeg" alt="picture">
+          <div class="content">
+              <h4>Bob Carling - <span class="h4article">development manager</span></h4>
+              <p class="contentp">Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
+          </div>
+    </article>
+    <article>
+        <img class="images left" src="Images/portrait_4.jpeg" alt="picture">
+          <div class="content">
+              <h4>Bob Carling - <span class="h4article">development manager</span></h4>
+              <p class="contentp">Quisque interdum enim sit <a href="">amet</a> amet risus tincidunt, eu porta metus placerat. Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p>
+          </div>
+    </article>
         </section>
         <nav>
             <div class="nav clearfix">
-                <div class="navtop"><p>&#x1F50D More About HBCWeb...</p></div>
-                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">Company Overview</a></p></div>
-                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">Meet the team</a></p></div>
-                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">The Digs</a></p></div>
-                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">The Princeline PN</a></p></div>
-                <div class="navlink"><p class="navlinkp"><img class="plus" src="Images/greenplus.jpeg" alt="plus"><a href="">Client Testimonials</a></p></div>
-                <div class="navtop bot"><p>&#128488;&#65039 What our clients are saying</p></div>
-                <div class="bubble triangle"><p>Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.</p></div>
+                <div class="navtop"><p>&#x1F50D; More About HBCWeb...</p></div>
+                <div class="navlink"><div class="plusdiv"></div><a class="navlinka"  href="">Company Overview</a></div>
+                <div class="navlink"><div class="plusdiv"></div><a class="navlinka" href="">Meet the team</a></div>
+                <div class="navlink"><div class="plusdiv"></div><a class="navlinka" href="">The Digs</a></div>
+                <div class="navlink"><div class="plusdiv"></div><a class="navlinka" href="">The Princeline PN</a></div>
+                <div class="navlink"><div class="plusdiv"></div><a class="navlinka" href="">Client Testimonials</a></div>
+                <div class="navtop bot"><p>&#xf0e5;  What our clients are saying</p></div>
+                <div class="bubble triangle"><p><span class="quotestop">&ldquo; </span>Cras arcu tortor, condimentum in urna vitae, posuere varius turpis. Nulla ultrices, est scelerisque pellentesque fringilla, ipsum est dapibus ante, ac sollicitudin purus lectus nec nisl. Proin ultricies justo id nulla pulvinar rhoncus at id est. Sed purus magna, cursus id mi sit amet, lacinia ultricies enim.<span class="quotesbottom">&rdquo; </span></p></div>
                 <div><p><a href="">View All Client Testimonials</a></p></div>
             </div>
         </nav>
