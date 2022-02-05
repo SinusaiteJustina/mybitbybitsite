@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>2nd example</title>
+        <title>pirmas programavimas example</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
         </style>
 </head>
-<body>
-    <div>
-    </div>
+<body id="body">
     <script>
-        console.log("labas pasauli");
+
+        // input
+
+        // algoritm
+
+        let body = document.getElementById('body');
+        body.innerHTML += '<div id="numtop">Prop it</div>';
+        body.innerHTML += '<div id="nummid">11</div>';
+        body.innerHTML += '<div id="numbot">Drop it </div>';
+
+        let numtop = document.getElementById('numtop');
+        numtop.style.color = "white";
+        numtop.style.backgroundColor = "red";
+        numtop.style.borderRadius = "5px 5px 0 0";
+        numtop.style.padding = "1px";
+        numtop.style.width = "30%";
+
+        let nummid = document.getElementById('nummid');
+        nummid.style.color = "red";
+        nummid.style.borderLeft = "1px solid grey";
+        nummid.style.borderRight = "1px solid grey";
+        nummid.style.textAlign = "center";
+        nummid.style.padding = "1px 2px";
+        nummid.style.fontSize = "2.25em";
+        nummid.style.fontWeight = "bold"; 
+        nummid.style.width = "calc(30% - 4px)";
+
+        let st = document.getElementById('numbot').style;
+        st.backgroundColor = "grey";
+        st.padding = "1px"; 
+        st.borderRadius = "0 0 5px 5px"; 
+        st.width = "30%";
+
+        // output
+
+
     </script>
 </body>
 </html>
