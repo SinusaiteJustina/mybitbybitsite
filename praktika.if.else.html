@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2nd example</title>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+    function PositiveNegative (number) {
+        if (number > 0) {
+            console.log(number, "Positive");
+        } else {
+            console.log(number,"negative");
+        }
+    }
+    PositiveNegative(20);
+
+    function TrafficLight (number) {
+        if (number == 1) {
+            console.log("Go"); 
+        }
+        if (number == 2) {
+            console.log("Wait");
+        }
+        if (number == 3) {
+            console.log("STOP");
+
+        }
+    }
+
+    TrafficLight(1);
+    TrafficLight(2);
+    TrafficLight(3);
+
+    function Books (d, k, n) {
+        if ((k/n) < d) {
+            console.log("Knygos telpa i deze");
+        } else {
+            console.log("Knygos netelpa i deze");
+        }
+    }
+
+    Books (2, 8, 5);
+    Books (3, 18, 5);
+
+    function Polindromic (number) {
+        if (number >= 1000 && number < 10000) {
+            let ketvirtas = number % 10;
+            let trecias = Math.floor(number / 10) % 10;
+            let antras = Math.floor(number / 100) % 10;
+            let pirmas = Math.floor(number / 1000) % 10;
+            console.log(pirmas, antras, trecias, ketvirtas);
+            if (pirmas == ketvirtas && antras == trecias) {
+                console.log("Polindromic number"); 
+            } else {
+                console.log("Not polindromic number");
+            }
+        } else {
+            console.log("Not 4 digit number");
+        }
+
+        }
+        Polindromic (1221);
+
+    function loterryticket (number) { 
+        if (number >= 100000 && number < 999999) {
+            let sestas = number % 10;
+            let penktas = Math.floor(number / 10) % 10;
+            let ketvirtas = Math.floor(number / 100) % 10;
+            let trecias = Math.floor(number / 1000) % 10;
+            let antras = Math.floor(number / 10000) % 10;
+            let pirmas = Math.floor(number / 100000) % 10;
+            console.log(pirmas, antras, trecias, ketvirtas, penktas, sestas);
+            if ((pirmas + antras + trecias + ketvirtas + penktas + sestas) % 4 == 0) {
+                console.log("Fortune"); 
+            } else {
+                console.log("Try again"); 
+            }
+        } else {
+            console.log("Not a ticket");
+        }
+
+    }
+
+    loterryticket (222442); 
+    loterryticket (100000); 
+
+    function year (number) {
+        if (number % 4 == 0 && number % 100 != 0) {
+            console.log("Keliamieji");
+        } else {
+            console.log("Paprastieji");
+        }
+
+    }
+
+    year(2004);
+    year(1900);
+
+    function Polindromic2 (number) {
+        if (number >= 10000 && number < 100000) {
+            let penktas = number % 10;
+            let ketvirtas = Math.floor(number / 10) % 10;
+            let trecias = Math.floor(number / 100) % 10;
+            let antras = Math.floor(number / 1000) % 10;
+            let pirmas = Math.floor(number / 10000) % 10;
+            console.log(pirmas, antras, trecias, ketvirtas, penktas);
+            if (pirmas == penktas && antras == ketvirtas) {
+                console.log("Polindromic number"); 
+            } else {
+                console.log("Not polindromic number");
+            }
+        } else {
+            console.log("Not 5 digit number");
+        }
+
+        }
+        Polindromic2 (12321);
+
+    function brothers (number) {
+        if (number >= 1 && number <= 6) {
+            if (number == 1 || number == 3 || number == 5) {
+            console.log("Kambari tvarko jaunelis");
+            } else {
+                console.log("Kambari tvarko vyresnelis"); 
+            }   
+        } else {
+            console.log("Niekas netvarko");
+        }
+
+    }
+
+    brothers(1);
+    brothers(2);
+
+    function grades (p1, p2, p3) {
+        if (p2 < p1 && p1 > p3) {
+            console.log("Pirmas gavo geriausia pazimi"); 
+        } if (p1 < p2 && p2 > p3) {
+            console.log("Antras gavo geriausia pazimi");
+        } if (p1 < p3 && p3 > p2) {
+            console.log("Trecias gavo geriausia pazimi");
+        }
+    }
+
+    grades(1, 2, 3);
+
+    function months (n) {
+        if (n >= 1 && n <= 12) {
+            if (n % 2 == 0 && n != 2) {
+                console.log("d=30");
+            } if (n == 2) {
+                console.log("d=28");
+            } else {
+                console.log("d=31"); 
+            }
+        } else {
+            console.log("Not a month");
+        }
+    }
+    months(1);
+    months(2);
+    months(4);
+    months(16);
+
+    function school (v1, m1, m2, v, m) {
+        if (((v1 * 60) + m1 + m2) < ((v * 60) + m)) {
+            console.log("Petras i pamoka nepaveluos"); 
+        } else {
+            console.log("Petras i pamoka paveluos");
+        }
+    }
+
+    school(8, 29, 43, 9, 5);
+    school(8, 29, 23, 9, 5);
+
+    function triangle (x) {
+        if (x % 3 ==0) {
+            console.log("Trikampi sudelioti galima"); 
+        } else {
+            console.log("Trikampio sudelioti negalima");
+        }
+    }
+    triangle(6);
+    triangle(4);
+
+    function Olimpiada (x) {
+        if (x >=1896 && x % 4 == 0) {
+            m = (x - 1896) / 4;
+            console.log(m + 1); 
+        } else {
+            console.log("neolimpiniai metai");
+        }
+    }
+
+    Olimpiada(2005);
+    Olimpiada(1904);
+    Olimpiada(1908);
+    Olimpiada(1912);
+
+    </script>
+</body>
+</html>

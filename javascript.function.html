@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <style>  
+        #article1 {
+            width: 100px; 
+            height: 100px;
+            background-color: blue;
+        } 
+        #article2 {
+            width: 100px; 
+            height: 100px;
+            background-color: grey;
+        } 
+    </style>
+</head>
+<body id="body">
+    <div id="article1" onclick="TopBot2();"></div>
+    <div id="article2"></div>
+<script>
+    // function firstOne(a, b) {
+    //     console.log(a, b);
+    // }
+    // firstOne(5, 6);
+
+    // // function secondOne(text, prhtext) {
+    // //     let hdng = '<h1>' + text + '</h1>';
+    // //     let prh = '<p>' + prhtext +'</p>';
+    // //     let article = '<div>' + hdng + prh + '</div>';
+    // //     document.getElementById("body").innerHTML += article; 
+    // // }
+    // secondOne("Hello", "First paragraph");
+    // secondOne("Middle", "");
+    // secondOne("Lorem Ipsum", "hdfakkfdjshdfsjl");
+    // secondOne("Goodbye", "Last paragraph");
+    
+    // function thirdOne(x, y, z) {
+    //     console.log(x * y * z); 
+    //     return x * y * z;
+    // }
+
+    // console.log(thirdOne(10, 13, 16) + thirdOne(5, 6, 7));
+
+    function fourthOne(number2, number) {
+        let top = '<p>Pop it</p>'; 
+        let mid = '<p>' + number + '</p>'; 
+        let bot = '<p>Drop it</p>'; 
+        let boxId = "box" + number2; 
+        let box = '<div id="'+ boxId + '">' + top + mid + bot + '</div>'; 
+        document.getElementById("body").innerHTML += box;
+        // console.log(boxx);
+    }
+
+    fourthOne(1, 3); 
+    fourthOne(2, 16); 
+    fourthOne(3, 84); 
+    fourthOne(4, 1); 
+    fourthOne(5, 99); 
+    fourthOne(6, 22);
+
+    function styleBox(a, bcColor, bColor) {
+        // console.log(a); 
+        let boxStyle = document.getElementById(a).style;
+        boxStyle.borderRadius = "15px";
+        boxStyle.backgroundColor = bcColor; 
+        boxStyle.width = "30%";
+        boxStyle.color = bColor; 
+    }
+        
+    styleBox("box1", "red", "blue"); 
+    styleBox("box2", "green", "white"); 
+    styleBox("box3", "yellow", "orange"); 
+    styleBox("box4", "green", "white"); 
+    styleBox("box5", "yellow", "orange"); 
+    styleBox("box6", "red", "blue"); 
+
+    function TopBot2() {
+        let TopBot2 = document.getElementById("article1");
+        console.log(TopBot2.style.backroaundColor);
+        if (TopBot2.style.backroaundColor == "blue") {
+            TopBot2.style.backroaundColor = "green";
+        } else {
+            TopBot2.style.backroaundColor = "grey";
+
+        }
+    }
+
+    TopBot2();
+</script>
+</body>
+</html>
