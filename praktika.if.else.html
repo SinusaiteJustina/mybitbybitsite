@@ -190,8 +190,8 @@
 
     function Olimpiada (x) {
         if (x >=1896 && x % 4 == 0) {
-            m = (x - 1896) / 4;
-            console.log(m + 1); 
+            m = (x - 1896) / 4 + 1;
+            console.log(m); 
         } else {
             console.log("neolimpiniai metai");
         }
@@ -201,6 +201,98 @@
     Olimpiada(1904);
     Olimpiada(1908);
     Olimpiada(1912);
+
+
+    function KvadratineLygtis (a, b, c) {
+       let discriminant = b * b - 4 * a *c; 
+       if (discriminant > 0) {
+           x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+           x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+           console.log("Du sprendiniai " + x1 + " ir " + x2);
+       } else if (discriminant == 0) {
+           x1 = x2 = -b / (2 * a); 
+           console.log("Vienas sprendinys " + x1); 
+       } else { 
+           console.log("Sprendiniu nera");
+
+       }
+
+    }
+
+    KvadratineLygtis(1, 2, 1);
+    KvadratineLygtis(1, 4, 3);
+
+    function Saulius (c, p) { 
+        console.log("Saulius nusipirks " + Math.floor(c/p) + " porciju ledu ir jam liks" + c % p + " centu"); 
+
+    }
+
+    Saulius(50, 20);
+    
+    function vairuotojas (n, m) {
+        console.log("Vairuotojas tures nuvaziuoti " + Math.ceil(n/m) + " kartus"); 
+    }
+
+    vairuotojas(100, 14);
+
+    function skaiciai (a, b) {
+        if (a > b) {
+            a = a - 1; 
+            b = b + 1; 
+            console.log(a + " and " + b);
+        } else {
+            a = a + 1; 
+            b = b - 1; 
+            console.log(a + " and " + b);
+
+        }
+    }
+
+
+    skaiciai(18, 24);
+
+    function library (v, n) {
+        console.log("vidutiniskai perskaitytu knygu per metus skaicius " + Math.round(v * 12 / 800));
+
+    }
+
+    library(120, 800);
+
+    function train (n, m, v) {
+        console.log("I vilniu vaziuoja " + Math.round((n - m) / v));
+    }
+
+    train (100, 20, 4);
+
+    function price (n, p) {
+        console.log("Nauja kaina " + Math.abs(n * 1.25)); 
+    }
+
+    price(54000, 60000);
+
+    function apple(n, m) {
+        console.log("Abiejuose ukiuose surinkta " + ((n) + (n-m)));
+
+    }
+
+    apple(39.2, 0.4);
+
+    function snowman (r) {
+        let s1 = Math.PI * r * r;
+        let s2 = Math.PI * 4 * r * r;
+        let s3 = Math.PI * 16 * r * r; 
+        console.log("Pirmo skritulio plotas " + (s1.toFixed(2)) + " antro skritulio plotas " + (s2.toFixed(2)) + " trecio skritulio plotas " + (s3.toFixed(2))); 
+    }
+
+    snowman(1);
+
+    // function highestnumber (a, b, c, d, e, f) {
+    //     if (a > b && b > c && c > d && d > e && e > f) {
+    //     console.log(a, b, c, d, e, f)
+    // } else if ()
+    // }
+
+
 
     </script>
 </body>
