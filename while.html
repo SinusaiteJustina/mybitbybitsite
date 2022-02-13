@@ -10,21 +10,28 @@
 </head>
 <body>
     <script>
-        // input 
+        // // input 
         // let start = 10, finish = 1000; 
 
-        // // algorithm 
+        // // // algorithm 
         // let x = start; 
+        // let y = finish; 
+        // let output = ""; 
 
-        // while (x <= finish) {  
-        //         if (x % 3 == 0 || x % 7 == 0) {
-        //         console.log(x);
+        // function numbers (x, y) { 
+        //     while (x <= finish) {  
+        //         if ((x % 3 == 0 ) ||( x % 7 == 0)) {
+        //         output += x + " ";
         //         }
-        //         x = x + 1;
+        //         ++x; 
         // }
-        // input 
+        //     return output; 
+        // }
+        // // output 
 
-        let a = -20, b = 50 
+        // console.log (numbers(start, finish)); 
+
+        let a = -80, b = 80 
         let x = a, y = b; 
 
             if (x < y) {
@@ -32,19 +39,26 @@
                 let positivesum = 0; 
                 let negativesum = 0; 
                 while (y > 0) {
-                    positivesum = positivesum + y; 
+                    // console.log(positivesum);
+                    positivesum += y; 
                     y = y - 1; 
-                    console.log(positivesum); 
-                } while (x < 0 ) { 
-                    negativesum = negativesum + x; 
-                    x = x + 1; 
-                    console.log(Math.abs(negativesum)); 
-                } if (Math.abs(negativesum) > positivesum) {
+                     
+                } 
+                while (x < 0 ) { 
+                    // console.log(Math.abs(negativesum)); 
+                    negativesum += x; 
+                    ++x; 
+                    
+                } 
+                if (Math.abs(negativesum) > positivesum) {
                     console.log("Neigiamu skaiciu suma didesne");
-                } else {
+                } else if ((Math.abs(negativesum) < positivesum)) { 
                     console.log("Teigiamu skaiciu suma didesne"); 
+                } else {
+                    console.log("Abi sumos vienodos");
                 }
-            } else {
+            } 
+            else {
                 console.log("Nera sprendiniu");
             }
 
