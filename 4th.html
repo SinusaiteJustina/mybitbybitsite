@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4thjs example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+<body>
+    <menu>
+        <a href="">Tekstas</a>
+        <a href="">Tekstas</a>
+        <a href="">Tekstas</a>
+        <a href="">Tekstas</a>
+        <a href="">Tekstas</a>
+    </menu>
+    <script>
+        // Algorithm 
+        let aList = document.getElementsByTagName("a"); 
+        // console.log(document.getElementsByTagName("a")); 
+
+        for (let i = 0; i < aList.length; ++i) {
+            let aListst = document.getElementsByTagName("a")[i].style;
+            aListst.textDecoration = "none";
+        }
+
+    </script>
+</body>
+</head> 
+</html>
