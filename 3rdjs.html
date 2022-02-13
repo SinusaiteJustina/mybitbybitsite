@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3rdjs example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body id="body">
+    <div class="article">
+        <div class="Content">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut sodales lorem. In ultricies massa non odio ultricies, eget ultrices leo elementum. Mauris molestie dolor non imperdiet eleifend. Proin eu augue ac ipsum scelerisque fringilla. Aliquam scelerisque, augue ac dignissim accumsan, diam arcu elementum neque, id tempus risus felis eu lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent scelerisque mattis purus vel ultrices. Proin eget augue nec purus placerat malesuada id sit amet nulla. Nunc efficitur tincidunt odio euismod hendrerit. Suspendisse suscipit eleifend luctus. Vivamus et pharetra velit, sit amet sollicitudin arcu. Donec eleifend fringilla diam. Donec tincidunt, metus vitae ornare scelerisque, quam ex feugiat lectus, id pharetra lectus tortor sit amet est. Integer tempus ultricies turpis, a cursus sapien porttitor eget. Morbi eu lorem lacus. Cras tempus blandit risus, et vestibulum tortor luctus ut.</p>
+        </div>
+    </div>
+<script>
+    // Input 
+    let k = 10;
+    
+    // Algorithm 
+    let x = k; 
+    let text = document.getElementsByClassName("article")[0].innerHTML;
+    console.log(text);
+
+    document.getElementsByClassName("article")[0].innerHTML = "";
+
+    for (let x = 0; x < 10; ++x) {
+       document.getElementsByClassName("article")[0].innerHTML += text;
+    }
+    console.log (document.getElementsByClassName("Content").length);
+
+    let i = 0; 
+    while (i < document.getElementsByClassName("Content").length) {
+        console.log(document.getElementsByClassName("Content")[i].innerHTML);
+        let oddst = document.getElementsByClassName("Content")[i].style;
+        if (i % 2 == 0) {
+            oddst.backgroundColor = "red";
+            oddst.border = "1px solid black"; 
+        }
+        ++i;        
+    }
+
+</script>
+</body>
+
+</html>
