@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3rdjs example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+
+         function randomNumbers (min, max) {
+             return Math.floor(Math.random()*(max-min+1)+min); 
+         }
+
+        let masyvas = [];
+        let numberslenght = 0; 
+
+        for(let i = 0; i < 30; i++) {
+            masyvas[i] = randomNumbers(5,25); 
+
+            if(masyvas[i] > 10) numberslenght++; 
+        } 
+
+        console.log(masyvas); 
+        console.log(numberslenght); 
+
+        // Raskite didžiausią masyvo reikšmę ir jos indeksą arba indeksus jeigu yra keli;
+
+
+        let max = masyvas[0];
+        let maxIndex = [];
+
+        for (let i = 1; i < masyvas.length; i++) {
+            if (masyvas[i] > max) {
+            max = masyvas[i];
+            }
+        }
+        console.log(max);
+
+        for (let i = 0; i < masyvas.length; i++) {
+            if (max == masyvas[i]) {
+                maxIndex.push(i);
+            }
+        }
+
+        console.log(maxIndex);
+        
+        // Suskaičiuokite visų porinių (lyginių) indeksų reikšmių sumą;
+
+        let evenSum = 0; 
+
+        for (let i = 0; i < masyvas.length; i++) {
+            if (i % 2 == 0) {
+                evenSum += masyvas[i]; 
+            }
+        }
+
+        console.log(evenSum); 
+
+
+        // Sukurkite naują masyvą, kurio reikšmės yra 1 uždavinio masyvo reikšmes minus tos reikšmės indeksas;
+
+
+    </script>
+</body>
+
+</html>
