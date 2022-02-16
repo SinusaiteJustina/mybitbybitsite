@@ -163,12 +163,81 @@
         // Išrūšiuokite 3 uždavinio masyvą pagal abecėlę.
 
         for(let a = 0; a < 200; a++) {
-            
+            letters[a] = String.fromCharCode(randomletters(65, 68));
+            letters.sort();
         }
 
+        console.log(letters); 
 
+        // Sugeneruokite du masyvus, kurių reikšmės yra atsitiktiniai skaičiai nuo 100 iki 999. 
+        // Masyvų ilgiai 100. Masyvų reikšmės turi būti unikalios savo masyve (t.y. neturi kartotis).
 
+        let masyvas1 = []; 
+        let masyvas2 = []; 
+        
+        function randomNumbers2 (min, max) {
+             return Math.floor(Math.random()*(max-min+1)+min); 
+        }
 
+       while (masyvas1.length <100) {
+            let numbers = randomNumbers2(100, 999); 
+            if (!masyvas1.includes(numbers)) {
+                masyvas1.push(numbers); 
+            } 
+
+        } 
+
+        while (masyvas2.length <100) {
+            let numbers = randomNumbers2(100, 999); 
+            if (!masyvas2.includes(numbers)) {
+                masyvas2.push(numbers); 
+            } 
+
+        } 
+
+        console.log(masyvas1); 
+        console.log(masyvas2);
+
+        // Sugeneruokite masyvą, kuris būtų sudarytas iš reikšmių, kurios yra pirmame 5 uždavinio masyve, bet nėra antrame 5 uždavinio masyve.
+
+        let masyvas3 = []; 
+
+        for (i = 0; i < 100; ++i) {
+            if (!masyvas2.includes(masyvas1[i])) {
+                masyvas3.push(masyvas1[i])
+            }
+        }
+
+        console.log(masyvas3); 
+
+        // Sugeneruokite masyvą iš elementų, kurie kartojasi abiejuose 5 uždavinio masyvuose.
+
+        let masyvas4 = []; 
+
+        for (i = 0; i < 100; ++i) {
+            if(masyvas2.includes(masyvas1[i])) {
+                masyvas4.push(masyvas1[i]);
+            }
+        }
+
+        console.log(masyvas4); 
+
+        // Sugeneruokite 10 skaičių masyvą pagal taisyklę: Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. 
+        // Trečias, pirmo ir antro suma. Ketvirtas- antro ir trečio suma. Penktas trečio ir ketvirto suma ir t.t.
+
+        let masyvas5 = []; 
+
+        for (i = 0; i < 10; ++i) {
+            if (i < 2) { 
+                let numbers8 = randomNumbers2(5, 25); 
+                masyvas5.push(numbers8); 
+            } 
+            else {
+                masyvas5[i] = masyvas5[i-1] + masyvas5[i-2]; 
+                console.log(masyvas5[i-2], masyvas5[i-1], masyvas5[i]); 
+            }
+        }    
+        console.log(masyvas5);
     </script>
 </body>
 
